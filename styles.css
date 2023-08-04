@@ -21,16 +21,17 @@ body {
 .wrapper {
   position: fixed;
   bottom: 50px;
-  right: 20px;
+  right: -345px;
   max-width: 345px;
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
   padding: 15px 25px 22px;
   transition: right 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.wrapper .show {
+.wrapper.show {
   right: 20px;
 }
 
@@ -71,7 +72,7 @@ header h2 {
   justify-content: space-between;
 }
 
-.buttons button {
+.buttons .button {
   width: calc(50% - 5px);
   padding: 8px 0;
   border: none;
@@ -85,4 +86,15 @@ header h2 {
 
 .buttons button:hover {
   opacity: 0.9;
+}
+
+#declineBtn {
+  border: 2px solid var(--primary-clr);
+  background-color: #fff;
+  color: var(--primary-clr);
+}
+
+#declineBtn:hover {
+  background-color: var(--primary-clr);
+  color: #fff;
 }
